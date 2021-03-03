@@ -121,25 +121,4 @@ bot.on("notice.friend.decrease", (data) => {
     bot.sendPrivateMsg(master, "好友减少: " + data.user_id + " " + data.nickname)
 })
 
-const elems = [
-    {
-        type: "text",
-        data: {
-            file: "/home/sagiri/Pictures/Pixiv/74378604_p0.png"
-        }
-    },
-    {
-        type: "face",
-        data: {
-            id: 104
-        }
-    },
-    {
-        type: "record",
-        data: {
-            file: "/home/sagiri/Codes/bot/test.silk"
-        }
-    }
-]
-
 bot.login(password)
